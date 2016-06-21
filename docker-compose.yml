@@ -84,3 +84,10 @@ services:
       volumes:
         - ./logs:/var/log
 
+
+    cron:
+      build: ./build/cron
+      container_name: cron
+      volumes:
+        - ./:/my/prj
+
